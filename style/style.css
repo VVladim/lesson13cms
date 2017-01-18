@@ -54,14 +54,31 @@ a:hover                        { text-decoration:none; }
 		border: 2px solid #000;;
 		margin: 10px;
 }
-.list-item-1 .active-1 {
+.list-item-1 .active {
 	  background: #ff0;
 }
 .list-item-2 li {
 	  display: none;
 }
-.list-item-2 .active-2 {
+.list-item-2 .active {
 	  display: block;
+}
+.bg-popap{
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	  background: rgba(0, 0, 0, 0.6);
+}
+.popap {
+	 position: relative;
+	 top: 50%;
+	 transform: translateY(-50%);
+	 width: 300px;
+	 height: 500px;
+	 margin: 0 auto;
+	 background: #fff;
 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------WRAPPER--------------------------------------*/

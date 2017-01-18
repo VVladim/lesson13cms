@@ -1,8 +1,10 @@
 $('.list-item-1 .item').on('click', function () {
-    var item1 = $(this).index();
-    $(this).addClass('.active');
-    $(this).siblings('.active');
+    var indexItem = $(this).index();
 
-    $('.list-item-2 .item').eq(item1).text();
+    $(this).addClass('active');
+    $(this).siblings().removeClass('active');
+
+    $('.list-item-2 .item').removeClass('active');
+    $('.list-item-2 .item').eq(indexItem).addClass('active');
 });
 // console.log ('111');

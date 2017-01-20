@@ -63,22 +63,37 @@ a:hover                        { text-decoration:none; }
 .list-item-2 .active {
 	  display: block;
 }
+body {
+	  overflow: hidden;
+	  height: 5000px;
+}
+
 .bg-popap{
-	position: fixed;
-	top: 0;
-	right: 0;
-	left: 0;
-	bottom: 0;
+	  position: fixed;
+	  top: 0;
+	  right: 0;
+	  left: 0;
+	  bottom: 0;
 	  background: rgba(0, 0, 0, 0.6);
+		overflow: auto;
+}
+.wrap-popap {
+	  display: table;
+		width: 300px;
+		height: 100%;
+		margin: 0 auto;
+}
+.wrap-table {
+	  display: table-cell;
+		vertical-align: middle;
 }
 .popap {
-	 position: relative;
-	 top: 50%;
-	 transform: translateY(-50%);
-	 width: 300px;
-	 height: 500px;
-	 margin: 0 auto;
-	 background: #fff;
+	  vertical-align: middle;
+	   position: relative;
+	   width: 300px;
+	   height: 500px;
+	   margin: 50px auto;
+	   background: #fff;
 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------WRAPPER--------------------------------------*/
